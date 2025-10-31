@@ -32,6 +32,11 @@ jobs:
     - name: Set up Android SDK
       uses: android-actions/setup-android@v2
 
+    - name: Make scripts executable
+      run: |
+        chmod +x .ci/android/setup_environment.sh
+        chmod +x .ci/android/build_app.sh
+
     - name: Setup environment
       run: ./.ci/android/setup_environment.sh
 
