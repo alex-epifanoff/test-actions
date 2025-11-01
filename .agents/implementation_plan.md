@@ -26,7 +26,16 @@ This document provides a detailed breakdown of the tasks required to complete th
 
 *   **Task 3.1:** Implement core features.
     *   **Description:** Implement the core features of the application.
-    *   **Status:** `[ ]`
+        *   **Status:** `[In Progress]`
+    *   **Task 3.1.1:** Implement the calculator page.
+        *   **Description:** Create a new React component for the calculator page.
+        *   **Status:** `[ ]`
+    *   **Task 3.1.2:** Implement the web search page.
+        *   **Description:** Create a new React component for the web search page.
+        *   **Status:** `[ ]`
+    *   **Task 3.1.3:** Implement navigation.
+        *   **Description:** Add navigation between the calculator and web search pages.
+        *   **Status:** `[ ]`
 *   **Task 3.2:** Set up CI/CD pipeline.
     *   **Description:** Set up the continuous integration and continuous deployment pipeline.
     *   **Status:** `[ ]`

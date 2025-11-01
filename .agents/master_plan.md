@@ -17,7 +17,10 @@ This document outlines the high-level plan for the project. It serves as a roadm
 
 ## 3. Phase 3: Implementation and Testing
 
-*   `[ ]` - Implement the core features of the application.
+*   `[In Progress]` - Implement the core features of the application.
+    *   `[ ]` - Implement calculator page.
+    *   `[ ]` - Implement web search page.
+    *   `[ ]` - Implement navigation.
 *   `[ ]` - Set up the CI/CD pipeline.
 *   `[ ]` - Write unit and integration tests.
 *   `[ ]` - Perform end-to-end testing.
