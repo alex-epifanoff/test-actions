@@ -12,5 +12,5 @@ echo "Installing fastlane..."
 
 # Deploy to Google Play
 echo "Deploying to Google Play..."
-cd src/react-stub/src-tauri/gen/android
+cd src-tauri/gen/android
 fastlane supply --aab app/build/outputs/bundle/release/app-release.aab --track internal --json_key $GOOGLE_PLAY_JSON_KEY

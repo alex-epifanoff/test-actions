@@ -30,4 +30,4 @@ This document outlines the high-level plan for the project. It serves as a roadm
 
 ## 5. Phase 5: Web Deployment
 
-*   `[In Progress]` - Deploy React app to Heroku.
+*   `[Done]` - Deploy React app to Heroku.

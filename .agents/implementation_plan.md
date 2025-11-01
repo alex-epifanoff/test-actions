@@ -44,4 +44,4 @@ This document provides a detailed breakdown of the tasks required to complete th
 
 *   **Task 5.1:** Deploy React app to Heroku.
     *   **Description:** Deploy the stub React application to Heroku for public access.
-    *   **Status:** `[In Progress]`
+    *   **Status:** `[Done]`

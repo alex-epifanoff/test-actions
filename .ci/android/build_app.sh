@@ -5,7 +5,6 @@ set -e
 
 # Build the React application
 echo "Building the React application..."
-cd src/react-stub
 npm run build
 
 # Build the Tauri Android application

@@ -25,5 +25,4 @@ echo "Installing Android development dependencies..."
 
 # Install project dependencies
 echo "Installing project dependencies..."
-cd src/react-stub
 npm install

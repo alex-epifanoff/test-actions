@@ -5,13 +5,13 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy the package.json and package-lock.json files to the container
-COPY src/react-stub/package*.json ./
+COPY package*.json ./
 
 # Install the project dependencies
 RUN npm install
 
 # Copy the rest of the application code to the container
-COPY src/react-stub/ .
+COPY . .
 
 # Build the React application
 RUN npm run build
