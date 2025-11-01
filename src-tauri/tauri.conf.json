@@ -4,8 +4,6 @@
   "version": "0.1.0",
   "identifier": "com.cicd-prototype.dev",
   "build": {
-    "beforeDevCommand": "npm run start",
-    "beforeBuildCommand": "npm run build",
     "frontendDist": "https://reactci-7fba94eb59ba.herokuapp.com/index.html"
   },
   "app": {
