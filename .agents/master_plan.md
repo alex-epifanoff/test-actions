@@ -27,3 +27,7 @@ This document outlines the high-level plan for the project. It serves as a roadm
 *   `[ ]` - Deploy the application to the app stores.
 *   `[ ]` - Monitor the application for issues.
 *   `[ ]` - Provide ongoing maintenance and support.
+
+## 5. Phase 5: Web Deployment
+
+*   `[In Progress]` - Deploy React app to Heroku.

@@ -1,0 +1,26 @@
+# Use an official Node.js runtime as a parent image
+FROM node:18-alpine
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the package.json and package-lock.json files to the container
+COPY src/react-stub/package*.json ./
+
+# Install the project dependencies
+RUN npm install
+
+# Copy the rest of the application code to the container
+COPY src/react-stub/ .
+
+# Build the React application
+RUN npm run build
+
+# Install a simple static server to serve the built files
+RUN npm install -g serve
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the application
+CMD ["serve", "-s", "build"]

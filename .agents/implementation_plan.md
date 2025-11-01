@@ -39,3 +39,9 @@ This document provides a detailed breakdown of the tasks required to complete th
 *   **Task 4.2:** Monitor the application.
     *   **Description:** Monitor the application for issues.
     *   **Status:** `[ ]`
+
+## 5. Phase 5: Web Deployment
+
+*   **Task 5.1:** Deploy React app to Heroku.
+    *   **Description:** Deploy the stub React application to Heroku for public access.
+    *   **Status:** `[In Progress]`
