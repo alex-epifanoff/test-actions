@@ -4,8 +4,8 @@
 set -e
 
 # Build the React application
-echo "Building the React application..."
-npm run build
+#echo "Building the React application..."
+#npm run build
 
 # Build the Tauri Android application
 echo "Building the Tauri Android application..."

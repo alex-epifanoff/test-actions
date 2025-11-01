@@ -43,6 +43,14 @@ jobs:
     - name: Build application
       run: ./.ci/android/build_app.sh
 
+    - name: setup Android signing
+      run: |
+        cd src-tauri/gen/android
+        echo "keyAlias=${{ secrets.ANDROID_KEY_ALIAS }}" > keystore.properties
+        echo "password=${{ secrets.ANDROID_KEY_PASSWORD }}" >> keystore.properties
+        base64 -d <<< "${{ secrets.ANDROID_KEY_BASE64 }}" > $RUNNER_TEMP/keystore.jks
+        echo "storeFile=$RUNNER_TEMP/keystore.jks" >> keystore.properties
+
     - name: Deploy to Google Play
       if: startsWith(github.ref, 'refs/tags/v')
       run: ./.ci/android/deploy_google_play.sh
