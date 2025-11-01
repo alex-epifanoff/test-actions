@@ -40,6 +40,18 @@ jobs:
     - name: Build application
       run: ./.ci/android/build_app.sh
 
+    - name: Upload APKs
+      uses: actions/upload-artifact@v3
+      with:
+        name: apks
+        path: src-tauri/gen/android/app/build/outputs/apk/**/*.apk
+
+    - name: Upload AAB
+      uses: actions/upload-artifact@v3
+      with:
+        name: aab
+        path: src-tauri/gen/android/app/build/outputs/bundle/**/*.aab
+
     - name: setup Android signing
       run: |
         cd src-tauri/gen/android
