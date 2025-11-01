@@ -41,13 +41,13 @@ jobs:
       run: ./.ci/android/build_app.sh
 
     - name: Upload APKs
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: apks
         path: src-tauri/gen/android/app/build/outputs/apk/**/*.apk
 
     - name: Upload AAB
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: aab
         path: src-tauri/gen/android/app/build/outputs/bundle/**/*.aab
