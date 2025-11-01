@@ -20,12 +20,15 @@ This document provides a detailed breakdown of the tasks required to complete th
     *   **Status:** `[ ]`
 *   **Task 2.2:** Develop a prototype.
     *   **Description:** Create a prototype to validate the design.
-    *   **Status:** `[ ]`
+    *   **Status:** `[Done]`
 
 ## 3. Phase 3: Implementation and Testing
 
 *   **Task 3.1:** Implement core features.
     *   **Description:** Implement the core features of the application.
+        *   **Status:** `[In Progress]`
+    *   **Task 3.1.1:** Implement a new design.
+        *   **Description:** Implement a new design for the application.
         *   **Status:** `[In Progress]`
     *   **Task 3.1.1:** Implement the calculator page.
         *   **Description:** Create a new React component for the calculator page.

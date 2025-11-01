@@ -12,12 +12,13 @@ This document outlines the high-level plan for the project. It serves as a roadm
 ## 2. Phase 2: Design and Prototyping
 
 *   `[Done]` - Create the application architecture and design.
-*   `[In Progress]` - Develop a prototype to validate the design.
+*   `[Done]` - Develop a prototype to validate the design.
 *   `[ ]` - Create a detailed implementation plan.
 
 ## 3. Phase 3: Implementation and Testing
 
 *   `[In Progress]` - Implement the core features of the application.
+    *   `[In Progress]` - Implement a new design for the application.
     *   `[ ]` - Implement calculator page.
     *   `[ ]` - Implement web search page.
     *   `[ ]` - Implement navigation.

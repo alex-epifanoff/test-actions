@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './WebSearch.css';
 
 function WebSearch() {
   const [query, setQuery] = useState('');
@@ -14,7 +15,7 @@ function WebSearch() {
   };
 
   return (
-    <div>
+    <div className="web-search">
       <h2>Web Search</h2>
       <input
         type="text"
