@@ -1,0 +1,29 @@
+name: iOS Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+
+    - name: Install Bundler
+      run: gem install bundler
+
+    - name: Install dependencies
+      run: |
+        cd src-rhodes
+        bundle install
+
+    - name: Build iOS application
+      run: |
+        cd src-rhodes
+        rake build:ios:device

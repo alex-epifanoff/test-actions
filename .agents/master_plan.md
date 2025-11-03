@@ -23,6 +23,7 @@ This document outlines the high-level plan for the project. It serves as a roadm
     *   `[ ]` - Implement web search page.
     *   `[ ]` - Implement navigation.
 *   `[ ]` - Set up the CI/CD pipeline.
+    *   `[ ]` - Add a pipeline to build for iOS.
 *   `[ ]` - Write unit and integration tests.
 *   `[ ]` - Perform end-to-end testing.
 

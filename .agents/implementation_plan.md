@@ -42,6 +42,9 @@ This document provides a detailed breakdown of the tasks required to complete th
 *   **Task 3.2:** Set up CI/CD pipeline.
     *   **Description:** Set up the continuous integration and continuous deployment pipeline.
     *   **Status:** `[ ]`
+    *   **Task 3.2.1:** Add a pipeline to build for iOS.
+        *   **Description:** Add a new pipeline to build the application for iOS.
+        *   **Status:** `[ ]`
 
 ## 4. Phase 4: Deployment and Maintenance
 
