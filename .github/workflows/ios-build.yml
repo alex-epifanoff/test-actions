@@ -25,7 +25,7 @@ jobs:
       run: npm install
 
     - name: Build iOS application
-      run: npm run tauri build -- --target ios
+      run: npm run tauri ios build
 
     - name: Upload iOS artifact
       uses: actions/upload-artifact@v4
