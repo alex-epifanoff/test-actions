@@ -1,4 +1,4 @@
-name: iOS Build
+name: iOS CI
 
 on:
   workflow_dispatch:
@@ -8,22 +8,27 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - name: Install Ruby
-      uses: ruby/setup-ruby@v1
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
       with:
-        ruby-version: 2.7
+        node-version: 18
 
-    - name: Install Bundler
-      run: gem install bundler
+    - name: Set up Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        target: aarch64-apple-ios
 
     - name: Install dependencies
-      run: |
-        cd src-rhodes
-        bundle install
+      run: npm install
 
     - name: Build iOS application
-      run: |
-        cd src-rhodes
-        rake build:ios:device
+      run: npm run tauri build -- --target ios
+
+    - name: Upload iOS artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ios-app
+        path: src-tauri/target/ios/debug/bundle/ios/*.app
