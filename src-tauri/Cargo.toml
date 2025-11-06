@@ -24,37 +24,37 @@ log = "0.4"
 tauri = { version = "2.9.2", features = [] }
 tauri-plugin-log = "2"
 
-thread-priority = "0.10"
-core_affinity = "0.8"
+#thread-priority = "0.10"
+#core_affinity = "0.8"
 
 #
-fern = "0.6"
+#fern = "0.6"
 # For async tasks and timers
-tokio = { version = "1", features = ["full"] }
+#tokio = { version = "1", features = ["full"] }
 # For checking dates and times
-chrono = "0.4"
+#chrono = "0.4"
 # For the persistent upload queue (using the bundled SQLite for ease of setup)
-rusqlite = { version = "0.31", features = ["bundled"] }
+#rusqlite = { version = "0.31", features = ["bundled"] }
 # For simpler error handling in our manager functions
-anyhow = "1.0"
+#anyhow = "1.0"
 # Not sure need this, but keeping it for now
-reqwest = { version = "0.11", features = ["json"] }
+#reqwest = { version = "0.11", features = ["json"] }
 # TUS upload
-tus_async_client = "0.2.1"
+#tus_async_client = "0.2.1"
 # To load .env
-dotenvy = "0.15" 
+#dotenvy = "0.15" 
 # Need these to implement audio recording
-cpal = "0.15"   # Cross-platform audio I/O
-hound = "3.5"   # WAV file encoding/decoding
-ringbuf = "0.3" # Lock-free ring buffer for audio data
-rubato = "0.14"
-base64 = "0.22.1"
-url = "2.5.7"
-opus = "0.3"
-ogg = "0.8"
-rand = "0.8"
-tauri-plugin-store = "2"
-lazy_static = "1.5.0"
+#cpal = "0.15"   # Cross-platform audio I/O
+#hound = "3.5"   # WAV file encoding/decoding
+#ringbuf = "0.3" # Lock-free ring buffer for audio data
+#rubato = "0.14"
+#base64 = "0.22.1"
+#url = "2.5.7"
+#opus = "0.3"
+#ogg = "0.8"
+#rand = "0.8"
+#tauri-plugin-store = "2"
+#lazy_static = "1.5.0"
 #openssl-sys = { version = "0.9", features = ["vendored"] }
-[target.'cfg(target_os = "android")'.dependencies]
-openssl = { version = "*", features = ["vendored"] }
+#[target.'cfg(target_os = "android")'.dependencies]
+#openssl = { version = "*", features = ["vendored"] }
