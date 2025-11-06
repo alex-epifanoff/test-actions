@@ -10,4 +10,4 @@ set -e
 # Build the Tauri Android application
 echo "Building the Tauri Android application..."
 # The --verbose flag is added for better logging in the CI environment.
-npx tauri android build --verbose
+npx tauri android build --verbose --target aarch64

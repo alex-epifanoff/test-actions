@@ -57,7 +57,7 @@ jobs:
         ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         ANDROID_KEY_BASE64: ${{ secrets.ANDROID_KEY_BASE64 }}
       run: |
-        cp src-tauri/sign.patch/build.gradle.kts src-tauri/gen/android
+        cp src-tauri/sign.patch/build.gradle.kts src-tauri/gen/android/app
         cd src-tauri/gen/android
         echo "keyAlias=$ANDROID_KEY_ALIAS" > keystore.properties
         echo "password=$ANDROID_KEY_PASSWORD" >> keystore.properties
